@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Finces Merchant</string>
+    <string name="welcome_message">Your Business grow \nwith us</string>
+    <string name="continue_">Continue</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="loading_privacy_policy">Loading privacy policy</string>
+    <string name="agree">Agree</string>
+    <string name="app_permission_title">We need a \nfew permissions!</string>
+    <string name="sms_txt">SMS</string>
+    <string name="sms_permission_rational_txt">SMS data (Non-Personal, Transactional SMS from Short-Code Senders) from phone will be collected, transmitted and stored in our secured fences server (https://finces.in) to assess creditworthiness, understand cash flow patterns and for fraud prevention. This data may be collected when the app is closed or not in use.</string>
+    <string name="location_txt">Location</string>
+    <string name="location_permission_rational_txt">Location data will be collected, transmitted and stored in our secured fences server (https://finces.in) for checking serviceability, fraud prevention, expedition of KYC and to provide better offers.</string>
+    <string name="device_info_txt">Device information</string>
+    <string name="device_info_permission_rational_txt">This information is collected, transmitted and stored in our secured fences server (https://finces.in) This is required for hassle-free registration and fraud prevention.</string>
+    <string name="installed_apps_txt">Installed apps</string>
+    <string name="installed_apps_rational_txt">Metadata on Installed apps will be collected, transmitted and stored in our secured fences server (https://finces.in)  to assess your creditworthiness and for analytical purposes.</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="camera_permission_rational_txt">Media and photos permission will allow you to click and upload documents for KYC, required for fraud prevention and to ensure compliance. This information is collected, transmitted and stored in our secured fences server (https://finces.in).</string>
+    <string name="rbi_and_nbci_registered">RBI And NBCI Registered</string>
+    <string name="welcome_screen_text2">UPI Payments \nCredit card bills \nPay bills \nReward Points</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

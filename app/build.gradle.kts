@@ -65,4 +65,5 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
     implementation("com.google.dagger:hilt-android:2.56.2")
     kapt("com.google.dagger:hilt-android-compiler:2.56.2")
+    implementation("androidx.fragment:fragment-ktx:1.8.2")
 }
