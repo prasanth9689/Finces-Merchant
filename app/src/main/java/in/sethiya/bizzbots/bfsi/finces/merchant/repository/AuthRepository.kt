@@ -2,8 +2,8 @@ package `in`.sethiya.bizzbots.bfsi.finces.merchant.repository
 
 import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.ApiResponse
 import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.OtpRequest
+import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.PanRequest
 import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.PhoneRequest
-import `in`.sethiya.bizzbots.bfsi.finces.merchant.retrofit.APIInterface
 import `in`.sethiya.bizzbots.bfsi.finces.merchant.retrofit.RetrofitInstance
 
 class AuthRepository{
@@ -17,6 +17,9 @@ class AuthRepository{
         return contactsService.verifyOtp(otpRequest)
     }
 
+    suspend fun fetchPan(panRequest: PanRequest): ApiResponse {
+        return contactsService.fetchPan(panRequest)
+    }
 //    suspend fun sendPhone(phone: String) = api.sendPhone(PhoneRequest(phone))
 //    suspend fun verifyOtp(phone: String, otp: String) = api.verifyOtp(OtpRequest(phone, otp))
 }

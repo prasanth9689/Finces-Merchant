@@ -24,15 +24,24 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val adapter = AuthPagerAdapter(this)
         binding.viewPager.adapter = adapter
-        binding.viewPager.isUserInputEnabled = false // disable swipe, control manually
+        binding.viewPager.isUserInputEnabled = true // disable swipe, control manually
 
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, pos ->
-            tab.text = if (pos == 0) "Phone" else "OTP"
+           // tab.text = if (pos == 0) "Phone" else "OTP"
+            when(pos){
+                0 -> tab.text = "Step 1" // Phone
+                1 -> tab.text = "Step 2" // OTP
+                2 -> tab.text = "Step 3" // PAN
+            }
         }.attach()
     }
 
     fun goToOtpScreen() {
         binding.viewPager.currentItem = 1
+    }
+
+    fun goToPanScreen() {
+        binding.viewPager.currentItem = 2
     }
 
     override fun onDestroyView() {
