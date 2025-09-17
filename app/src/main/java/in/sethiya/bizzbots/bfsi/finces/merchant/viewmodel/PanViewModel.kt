@@ -4,24 +4,34 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.ApiResponse
-import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.PanRequest
-import `in`.sethiya.bizzbots.bfsi.finces.merchant.repository.AuthRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.PanVerificationRequest
+import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.PanVerificationResponse
+import `in`.sethiya.bizzbots.bfsi.finces.merchant.repository.PanRepository
+import jakarta.inject.Inject
 import kotlinx.coroutines.launch
 
-class PanViewModel : ViewModel() {
-    private val repository = AuthRepository()
-    private val _response = MutableLiveData<ApiResponse>()
+@HiltViewModel
+class PanViewModel @Inject constructor(private val repository: PanRepository) : ViewModel() {
 
-    val response: LiveData<ApiResponse> = _response
+    private val _panResponse = MutableLiveData<PanVerificationResponse?>()
+    val panResponse: LiveData<PanVerificationResponse?> get() = _panResponse
 
-    fun fetchPanDetails(panRequest: PanRequest){
+    fun verifyPan(panVerificationRequest: PanVerificationRequest) {
+        val request = PanVerificationRequest(
+            pan = panVerificationRequest.pan,
+            verification_id = panVerificationRequest.verification_id,
+            name = panVerificationRequest.name
+        )
+
         viewModelScope.launch {
             try {
-                val result = repository.fetchPan(panRequest)
-                _response.postValue(result)
+                val response = repository.verifyPan(request)
+                _panResponse.postValue(response)
             } catch (e: Exception) {
-                _response.postValue(ApiResponse(false, "Error: ${e.message}"))
+                _panResponse.postValue(
+                    PanVerificationResponse(status = "ERROR", message = e.message)
+                )
             }
         }
     }

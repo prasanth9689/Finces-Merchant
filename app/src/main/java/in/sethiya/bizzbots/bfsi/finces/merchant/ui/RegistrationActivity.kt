@@ -2,8 +2,9 @@ package `in`.sethiya.bizzbots.bfsi.finces.merchant.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
 import `in`.sethiya.bizzbots.bfsi.finces.merchant.R
-
+@AndroidEntryPoint
 class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

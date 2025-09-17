@@ -28,7 +28,7 @@
             android:text="Please enter your PAN number to verify."/>
 
         <EditText
-            android:id="@+id/etPhone"
+            android:id="@+id/edPan"
             android:hint="PAN Number"
             android:inputType="text"
             android:layout_marginTop="10dp"
@@ -38,8 +38,19 @@
             android:layout_height="50dp"
             android:paddingStart="10dp"/>
 
+        <EditText
+            android:id="@+id/edPanName"
+            android:hint="Name"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:maxLength="10"
+            android:background="@drawable/btn_common"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"/>
+
         <Button
-            android:id="@+id/btnSendPhone"
+            android:id="@+id/btnPan"
             android:text="Verify Pan"
             android:layout_marginTop="10dp"
             android:layout_gravity="end"

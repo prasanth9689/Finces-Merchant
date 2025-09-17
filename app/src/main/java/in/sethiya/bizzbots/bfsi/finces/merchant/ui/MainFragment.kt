@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 import `in`.sethiya.bizzbots.bfsi.finces.merchant.R
 import `in`.sethiya.bizzbots.bfsi.finces.merchant.databinding.FragmentMainBinding
 

@@ -66,4 +66,19 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.56.2")
     kapt("com.google.dagger:hilt-android-compiler:2.56.2")
     implementation("androidx.fragment:fragment-ktx:1.8.2")
+
+    // Ktor Client
+    implementation("io.ktor:ktor-client-core:2.3.4")
+    implementation("io.ktor:ktor-client-android:2.3.4")
+
+    // JSON serialization
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.4")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.4")
+
+    implementation("com.google.dagger:hilt-android:2.52")
+    kapt("com.google.dagger:hilt-android-compiler:2.52")
+
+    // optional but recommended for ViewModel
+//    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.2.0")
+//    kapt("androidx.hilt:hilt-compiler:1.2.0")
 }
