@@ -25,11 +25,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FincesMerchant">
-<!--        <activity-->
-<!--            android:name=".ui.RegistrationActivity"-->
-<!--            android:exported="false" />-->
         <activity
-                android:name=".ui.RegistrationActivity"
+            android:name=".ui.Home"
+            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".ui.RegistrationActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".ui.RegistrationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

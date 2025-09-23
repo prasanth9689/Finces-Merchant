@@ -78,6 +78,10 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.52")
     kapt("com.google.dagger:hilt-android-compiler:2.52")
 
+    implementation("androidx.room:room-runtime:2.7.1")
+    kapt("androidx.room:room-compiler:2.7.1")
+    implementation("androidx.room:room-ktx:2.7.1")
+
     // optional but recommended for ViewModel
 //    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.2.0")
 //    kapt("androidx.hilt:hilt-compiler:1.2.0")

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET PASSCODE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set 4 digits of passcode"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!-- EditText at top -->
+        <EditText
+            android:id="@+id/phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:inputType="phone"
+            android:textStyle="bold"
+            android:cursorVisible="true"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:layout_alignParentTop="true"/>
+
+        <!-- Keyboard just below EditText -->
+        <in.sethiya.bizzbots.bfsi.finces.merchant.util.NumberKeyboardView
+            android:id="@+id/number_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_input"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

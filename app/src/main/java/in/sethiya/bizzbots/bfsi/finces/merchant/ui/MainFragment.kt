@@ -30,20 +30,37 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, pos ->
            // tab.text = if (pos == 0) "Phone" else "OTP"
             when(pos){
-                0 -> tab.text = "Step 1" // Phone
-                1 -> tab.text = "Step 2" // OTP
-                2 -> tab.text = "Step 3" // PAN
+                0 -> tab.text = "Step 1" // Intro
+                1 -> tab.text = "Step 2" // Lang
+                2 -> tab.text = "Step 3" // Phone
+                3 -> tab.text = "Step 4" // OTP
+                4 -> tab.text = "Step 5" // PAN
+                5 -> tab.text = "Step 6" // Emp Reg
+                6 -> tab.text = "Step 7" // Passcode
+                7 -> tab.text = "Step 8" // Device reg
+                8 -> tab.text = "Step 9" // Login
             }
         }.attach()
     }
 
+    fun goToPanScreen() {
+        binding.viewPager.currentItem = 3
+    }
+
     fun goToOtpScreen() {
+        binding.viewPager.currentItem = 2
+    }
+
+
+    fun goToPhoneScreen() {
         binding.viewPager.currentItem = 1
     }
 
-    fun goToPanScreen() {
-        binding.viewPager.currentItem = 2
+
+    fun goToLanguageScreen() {
+        binding.viewPager.currentItem = 0
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

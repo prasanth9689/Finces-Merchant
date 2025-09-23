@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="20dp"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:background="@color/white">
+    tools:context=".ui.LoginFragment">
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_pan"/>
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-medium"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical">
 
         <TextView
@@ -25,11 +30,11 @@
             android:fontFamily="sans-serif"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:text="Please enter your PAN number to verify."/>
+            android:text="Enter mobile no"/>
 
         <EditText
             android:id="@+id/edPan"
-            android:hint="PAN Number"
+            android:hint="Mobile Number"
             android:inputType="text"
             android:layout_marginTop="10dp"
             android:maxLength="10"
@@ -37,26 +42,44 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Enter password"/>
 
         <EditText
-            android:id="@+id/edPanName"
-            android:hint="Name"
+            android:hint="Password"
             android:inputType="text"
             android:layout_marginTop="10dp"
-            android:visibility="gone"
             android:maxLength="10"
             android:background="@drawable/btn_common"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingStart="10dp"/>
 
+        <!--        <EditText-->
+        <!--            android:id="@+id/edPanName"-->
+        <!--            android:hint="Name"-->
+        <!--            android:inputType="text"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:maxLength="10"-->
+        <!--            android:background="@drawable/btn_common"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:paddingStart="10dp"/>-->
+
         <Button
-            android:id="@+id/btnPan"
-            android:text="Verify Pan"
+            android:id="@+id/btnLogin"
+            android:text="Login"
             android:layout_marginTop="10dp"
             android:layout_gravity="end"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
 
     </LinearLayout>
 
