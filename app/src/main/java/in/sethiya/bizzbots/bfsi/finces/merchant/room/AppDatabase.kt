@@ -4,11 +4,11 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.FencesMerchant
+import `in`.sethiya.bizzbots.bfsi.finces.merchant.model.MerchantUsers
 
-@Database(entities = [FencesMerchant::class], version = 1)
+@Database(entities = [MerchantUsers::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun contactDao(): FencesMerchant
+    abstract fun fencesMerchantDao(): FencesMerchantDao
 
     companion object {
         @Volatile

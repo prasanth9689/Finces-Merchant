@@ -12,14 +12,15 @@
     <!-- 3 columns grid -->
     <GridLayout
         android:id="@+id/keys_grid"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="3"
         android:rowCount="4"
         android:alignmentMode="alignMargins"
         android:useDefaultMargins="true"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp">
+        android:paddingRight="24dp"
+        >
 
         <!-- We'll inflate view_number_key for each key in code for flexibility -->
     </GridLayout>

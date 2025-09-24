@@ -7,7 +7,7 @@ class AuthPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount() = 9
     override fun createFragment(position: Int): Fragment =
         when(position){
-            0-> IntroductionFragment()
+            0-> PasscodeFragment() // IntroductionFragment()
             1-> LanguageFragment()
             2-> PhoneFragment()
             3-> OtpFragment()
