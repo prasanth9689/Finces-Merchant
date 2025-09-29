@@ -1,7 +1,24 @@
 <resources>
     <string name="app_name">Finces Merchant</string>
-    <string name="welcome_message">Your Business grow  with us</string>
+    <string name="permissions">Permissions</string>
+    <string name="camera_permission_denied">Camera Permission Denied</string>
+    <string name="storage_permission">Storage permission</string>
+    <string name="camera_permission">Camera permission</string>
+    <string name="user_info_permission">User info permission</string>
+    <string name="storage">Storage</string>
+    <string name="welcome_message">Your Business grow \nwith us</string>
+    <string name="select_language">Select language</string>
+    <string name="get_start_storage_permission">Need storage permission to access application feature\'s and  download financial documents from in this app</string>
+    <string name="camera">Camera</string>
+    <string name="get_start_camera_permission">Purpose for app user use the camera feature for update profile picture and cover picture.</string>
+    <string name="user_information">User information</string>
+    <string name="get_start_user_info_permission">We collect your personal data such as mobile no, country , region, gender, age, our application searching history for providing better use.</string>
     <string name="continue_">Continue</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="english">English</string>
+    <string name="tamil">Tamil</string>
+    <string name="hindi">Hindi</string>
+    <string name="log_in">LOG IN</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="loading_privacy_policy">Loading privacy policy</string>
     <string name="agree">Agree</string>
@@ -18,27 +35,6 @@
     <string name="camera_permission_rational_txt">Media and photos permission will allow you to click and upload documents for KYC, required for fraud prevention and to ensure compliance. This information is collected, transmitted and stored in our secured fences server (https://finces.in).</string>
     <string name="rbi_and_nbci_registered">RBI And NBCI Registered</string>
     <string name="welcome_screen_text2">UPI Payments \nCredit card bills \nPay bills \nReward Points</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="select_language">Select language</string>
-
-    <string name="app_icon">app_icon</string>
-    <string name="sign_up">Register</string>
-    <string name="sign_up_subtitle">Register your Device on the Finces Network.</string>
-    <string name="sign_in">Sign In</string>
-    <string name="sign_in_subtitle">Sign In to your Account Securely!</string>
-    <string name="mobile_number">Mobile Number</string>
-    <string name="password">Password</string>
-    <string name="remember_password">Remember Password</string>
-    <string name="enter_pin_4_6_digits">Enter PIN (4–6 digits)</string>
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
     <string name="home_nav_bfsi">BFSI</string>
     <string name="home_nav_about_us">About Us</string>
     <string name="home_nav_company">Company</string>
@@ -51,7 +47,777 @@
     <string name="home_nav_bank_accounts">Bank Accounts</string>
     <string name="home_nav_settings">Settings</string>
     <string name="home_nav_logout">Logout</string>
+    <string name="search_brands_smart_phones_headset_cloths">Search Name (or) Mobile Number</string>
+    <string name="grow_your_nbusiness_nwith_us">Grow your \nbusiness \nwith us</string>
+    <string name="sign_in">Sign In</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="phone_number">Phone number</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="welcome">Welcome</string>
+    <string name="icons" translatable="false">icons</string>
+    <string name="bfsi">BFSI</string>
+    <string name="solo_proprietorship">solo proprietorship</string>
+    <string name="our_products">Our products</string>
+    <string name="company">Company</string>
+    <string name="company_gateway">Company Gateway</string>
+    <string name="contacts">Contacts</string>
+    <string name="business_area">Business area</string>
+    <string name="management">Management</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="credse_bill_payments_private_limited" translatable="false">Credse Bill Payments private limited</string>
+    <string name="about_the_app">About the app</string>
+    <string name="get_started">Get started</string>
+    <string name="enter_mobile_number_to_get_otp">Enter mobile number to get OTP</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="add_contacts">ADD CONTACTS</string>
+    <string name="login">LOGIN</string>
+    <string name="enter_passcode">Enter Passcode</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="text1" translatable="false">Address 635b, 5th Main Road, Ramnagar South, Madipakkam, Madipakkam, Sholinganallur, Kanchipuram, Tamil Nadu, India - 600091</string>
+    <string name="aadhar_verification">Aadhar verification</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_the_otp_received_on_customer_s_aadhar_registered_mobile_number_and_click_on_submit_button_to_validate_customer_s_identity_as_per_aadhar_database">Enter the OTP received on Customer \'s Aadhar registered mobile Number and click on SUBMIT button to validate customer\'s identity as per Aadhar Database</string>
+    <string name="submit">Submit</string>
+    <string name="re_send_otp_in_10_seconds">Re-send OTP in 10 seconds</string>
+    <string name="register">Register</string>
+    <string name="mobile_registration">Mobile Registration</string>
+    <string name="enter_mobile_no">Enter mobile no</string>
+    <string name="auto_read_otp">Auto read OTP</string>
+    <string name="otp_not_received">OTP Not received?</string>
+    <string name="_30_seconds">30 Seconds</string>
+    <string name="device_registration">Device registration</string>
+    <string name="enter_access_token">Enter access token</string>
+    <string name="create_passcode">Create Passcode</string>
+    <string name="setup_passcode">Setup Passcode</string>
+    <string name="into_your_account">into your account</string>
+    <string name="all_contacts">All Contacts</string>
+    <string name="profile">Profile</string>
+    <string name="my_company">My company</string>
+    <string name="wallet_satements">Wallet satements</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="dob">DOB</string>
+    <string name="gender">Gender</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="update_login_passcode">Update Login Passcode</string>
+    <string name="c_o" translatable="false">C/O</string>
+    <string name="sole_proprietorship">Sole Proprietorship</string>
+    <string name="meaning">Meaning</string>
+    <string name="sole_proprietorship_as_defined_by_the_govt_of_india_is_a_one_man_organization_where_a_single_individual_owns_manages_and_controls_the_business_there_is_no_legal_distinction_between_the_owner_and_the_business_entity_the_sole_proprietor_is_not_a_legal_entity_it_simply_refers_to_a_person_who_owns_the_business">Sole Proprietorship, as defined by the Govt. Of India, is a “one-man organization where a single individual owns, manages and controls the business”. There is no legal distinction between the owner and the business entity. The sole proprietor is not a legal entity. It simply refers to a person who owns the business.</string>
+    <string name="business_incorporation">Business Incorporation</string>
+    <string name="the_sole_proprietorship_is_a_popular_business_form_due_to_its_simplicity_ease_of_setup_and_nominal_cost_a_sole_proprietor_is_not_required_to_go_through_elaborate_legal_formalities_no_agreement_is_to_be_made_and_registration_of_the_firm_is_also_not_essential_however_the_owner_may_be_required_to_obtain_a_license_specific_to_the_line_of_business_from_the_local_administration">The Sole Proprietorship is a popular business form due to its simplicity, ease of setup, and nominal cost. A sole proprietor is not required to go through elaborate legal formalities. No agreement is to be made and registration of the firm is also not essential. However, the owner may be required to obtain a license specific to the line of business from the local administration.</string>
+    <string name="government_registrations">Government Registrations</string>
+    <string name="a_sole_proprietorship_business_like_any_other_form_of_business_has_to_necessarily_register_on_various_government_departments_and_programs_and_follow_all_the_rules_and_regulations_regulations_amended_by_the_law_on_timely_basis_as_and_when_they_become_eligible_or_meet_the_criteria_of_such_laws_further_registration_on_such_government_programs_enables_the_proprietor_to_avail_various_benefits_and_subsidies_provided_by_government_under_such_laws_n_n_some_of_the_major_laws_or_programs_that_every_entrepreneur_should_be_aware_of_are">A Sole Proprietorship business like any other form of business has to necessarily register on various government departments and programs and follow all the rules and regulations regulations amended by the law on timely basis as and when they become eligible or meet the criteria of such laws. Further registration on such government programs enables the proprietor to avail various benefits and subsidies provided by government under such laws. \n \n Some of the Major Laws or Programs that every entrepreneur should be aware of are:</string>
+    <string name="_1_income_tax_laws">1, Income Tax Laws</string>
+    <string name="_2_goods_and_service_tax">2, Goods and Service Tax</string>
+    <string name="_3_shop_amp_1_establishment_laws"><![CDATA[3, Shop & Establishment Laws]]></string>
+    <string name="_4_professional_tax_under_municipal_laws">4, Professional Tax under Municipal Laws</string>
+    <string name="_5_legal_metrology_laws">5, Legal Metrology Laws</string>
+    <string name="_6_legal_metrology_laws">6, Legal Metrology Laws</string>
+    <string name="_7_1_ssi_msme_laws_amp_schemes"><![CDATA[7, SSI/MSME Laws & Schemes]]></string>
+    <string name="legal_amp_trade_business_name"><![CDATA[Legal & Trade/Business Name]]></string>
+    <string name="the_legal_name_of_any_sole_proprietorship_business_is_the_name_of_its_owner_as_given_in_the_pan_database_sole_proprietors_can_do_business_under_their_own_names_because_creating_a_separate_business_or_trade_name_isn_t_necessary_a_sole_proprietor_may_however_use_a_trade_name_or_business_name_other_than_their_or_its_legal_name_they_may_have_to_legally_trademark_their_business_name_if_it_differs_from_their_own_legal_name_if_required">The Legal Name of any Sole Proprietorship Business is the name of its owner as given in the PAN Database. Sole proprietors can do business under their own names because creating a separate business or trade name isn’t necessary. A sole proprietor may however use a trade name or business name other than their or its legal name. They may have to legally trademark their business name if it differs from their own legal name if required.</string>
+    <string name="investment_amp_capital"><![CDATA[Investment & Capital]]></string>
+    <string name="there_are_no_minimum_capital_investment_requirements_for_a_sole_proprietorship_as_sole_proprietorships_are_not_considered_business_entities_that_are_separate_from_its_owner_the_funds_received_from_lenders_or_investors_are_treated_as_personal_use_requests_although_the_funds_acquired_from_these_sources_are_used_for_business_purposes">There are no minimum capital investment requirements for a sole proprietorship. As sole proprietorships are not considered business entities that are separate from its owner the funds received from lenders or Investors are treated as personal use requests, although the funds acquired from these sources are used for business purposes.</string>
+    <string name="taxation">Taxation</string>
+    <string name="because_a_sole_proprietorship_is_indistinguishable_from_its_owner_sole_proprietorship_taxation_is_quite_simple_the_income_earned_by_a_sole_proprietorship_is_income_earned_by_its_owner">Because a sole proprietorship is indistinguishable from its owner, sole proprietorship taxation is quite simple. The income earned by a sole proprietorship is income earned by its owner.</string>
+    <string name="work_conditions">Work Conditions</string>
+    <string name="a_sole_trader_does_not_necessarily_work_alone_it_is_possible_for_the_sole_trader_to_employ_other_people">A sole trader does not necessarily work \'alone\'—it is possible for the sole trader to employ other people</string>
+    <string name="community">Community</string>
+    <string name="there_are_various_communities_and_association_of_people_in_this_sector_who_have_come_together_to_address_various_challenges_faced_by_them_and_boost_their_contribution_to_the_society_and_economy_of_the_nation_n_n_sole_proprietorship_as_defined_by_the_govt_of_india_is_a_one_man_organisation_where_a_single_individual_owns_manages_and_controls_the_business_there_is_no_legal_distinction_between_the_owner_and_the_business_entity_the_sole_proprietor_is_not_a_legal_entity_it_simply_refers_to_a_person_who_owns_the_business">There are various communities and association of people in this sector, who have come together to address various challenges faced by them and boost their contribution to the society and economy of the nation. \n \n Sole Proprietorship, as defined by the Govt. Of India, is a “one-man organisation where a single individual owns, manages and controls the business”. There is no legal distinction between the owner and the business entity. The sole proprietor is not a legal entity. It simply refers to a person who owns the business.</string>
+    <string name="this_app_is_a_simple_yet_powerful_tool_for_individual_entrepreneurs_or_sole_proprietors_or_sole_traders_who_are_willing_or_already_pursuing_their_business_as_an_individual_in_the_bfsi_industry_to_accelerate_automate_and_manage_their_business_more_efficiently_and_effectively">This App is a simple yet powerful tool for Individual Entrepreneurs or Sole Proprietors or Sole Traders who are willing or already pursuing their business as an Individual in the BFSI Industry to accelerate, automate and manage their business more efficiently and effectively.</string>
+    <string name="here_we_guide_you_from_set_up_to_taxation_helping_you_with_the_various_rules_and_regulations_applicable_to_your_business_necessary_registrations_and_licenses_to_be_obtained_managing_and_automating_your_entire_business_processes_like_invoicing_banking_collection_reporting_inventory_management_accounting_and_taxation_along_with_customer_relationship_management_thus_transforming_your_active_income_to_passive_income">Here, we guide you from set-up to taxation, helping you with the various rules and regulations applicable to your business , necessary registrations and licenses to be obtained, managing and automating your entire business processes like invoicing, banking, collection, reporting, inventory management, accounting and taxation, along with customer relationship management thus transforming your active income to passive income.</string>
+    <string name="we_also_strive_to_provide_a_platform_for_the_various_business_communities_to_engage_with_each_other_in_a_better_and_constructive_way">We also strive to provide a platform for the various business communities to engage with each other in a better and constructive way.</string>
+    <string name="our_mission">Our Mission</string>
+    <string name="to_unleash_the_power_of_technology_into_the_hands_of_entrepreneurs">To unleash the power of technology into the hands of entrepreneurs.</string>
+    <string name="engineering_or_technology_is_all_about_using_the_power_of_science_to_make_life_better_for_people_to_reduce_cost_to_improve_comfort_to_improve_productivity_etc">Engineering or technology is all about using the power of science to make life better for people, to reduce cost, to improve comfort, to improve productivity, etc.</string>
+    <string name="n_r_narayana_murthy">--- N. R. Narayana Murthy</string>
+    <string name="wishing_you_a_happy_ride_with_us_we_look_forward_to_a_constructive_and_mutually_beneficial_relationship">Wishing you a happy ride with us, we look forward to a constructive and mutually beneficial relationship.</string>
+    <string name="pan">PAN</string>
+    <string name="legal_name">Legal Name</string>
+    <string name="reg_address">Reg. Address</string>
+    <string name="description">Description</string>
+    <string name="wallet_statements">Wallet statements</string>
+    <string name="current_balance">Current balance :</string>
+    <string name="add_money">Add money</string>
+    <string name="add">Add</string>
+    <string name="transactions">Transactions</string>
+    <string name="paid_for_aadhar_verification">Paid for aadhar verification</string>
+    <string name="aadhar">Aadhar</string>
+    <string name="enter_aadhar_number">Enter Aadhar Number</string>
+    <string name="enter_yours_customer_s_12_digit_aadhar_number_and_click_on_send_otp_to_recive_otp_on_customer_s_aadhar_registered_mobile_number">Enter yours customer\'s 12 digit Aadhar number and Click on Send OTP to recive OTP on Customer\'s Aadhar Registered Mobile Number.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="update_email">: Update email</string>
+    <string name="view_latest_record">View Latest Record</string>
+    <string name="update_with_aadhar">Update with Aadhar</string>
+    <string name="my_review">My Review</string>
+    <string name="report">Report</string>
+    <string name="all_the_details_amp_feedbacks_provided_here_are_only_for_your_own_organizations_internal_usage_and_for_calculating_personality_score_of_customer_which_will_be_used_publically"><![CDATA[All the details & feedbacks provided here are only for your own organizations internal usage and for calculating Personality Score of customer which will be used publically]]></string>
+    <string name="personality_traits">Personality Traits</string>
+    <string name="honesty">Honesty</string>
+    <string name="kindness">Kindness</string>
+    <string name="friendliness">Friendliness</string>
+    <string name="smartness">Smartness</string>
+    <string name="other_aspects">Other Aspects</string>
+    <string name="financial_credibility">Financial Credibility</string>
+    <string name="political_activeness">Political Activeness</string>
+    <string name="religious_activenes">Religious Activities</string>
+    <string name="feedback">Feedback</string>
+    <string name="offences">Offences</string>
+    <string name="registered_offence">Registered Offence :</string>
+    <string name="view">View</string>
+    <string name="un_registered_offence">Un-registered Offence :</string>
+    <string name="any_offences_submitted_here_will_only_be_posted_live_after_successful_verification_by_police_department">Any offences submitted here will only be posted live after successful verification by Police Department.</string>
+    <string name="add_offences">Add Offences</string>
+    <string name="registered">Registered</string>
+    <string name="un_registered">Un-Registered</string>
+    <string name="district">District</string>
+    <string name="police_station">Police station</string>
+    <string name="fir" translatable="false">FIR</string>
+    <string name="type_of_offence">Type of offence</string>
+    <string name="date_an_time_offence">Date an Time offence</string>
+    <string name="place_of_offence">Place of offence</string>
+    <string name="no_off_witness">No off witness</string>
+    <string name="whether_allegation_proved">Whether allegation proved</string>
+    <string name="overall_experience">Overall Experience</string>
+    <string name="strongly_n_negative">Strongly \n Negative</string>
+    <string name="negative">Negative</string>
+    <string name="neutral">Neutral</string>
+    <string name="positive">Positive</string>
+    <string name="strongly_n_positive">Strongly \n Positive</string>
+    <string name="any_attempt_of_misinterpretation_of_facts_or_willful_dishonesty_in_data_provisioning_for_any_reasons_will_result_to_initiation_of_civil_and_criminal_proceedings_under_section_499_of_ipc_for_defamation_along_with_suspension_of_user_account_deletion_of_all_customer_data_and_proceeding_towards_damage_recovery">Any attempt of misinterpretation of facts or willful dishonesty in data provisioning for any reasons will result to initiation of civil and criminal proceedings under Section 499 of IPC for defamation along with suspension of user account, deletion of all customer data and proceeding towards damage recovery..</string>
+    <string name="save">SAVE</string>
+    <string name="sensibility">Sensibility</string>
+    <string name="registered_offence_record">Registered Offence Record</string>
+    <string name="all_offences">All Offences</string>
+    <string name="offence_no_1">Offence No 1:</string>
+    <string name="allegation_proved">Allegation proved</string>
+    <string name="my_report">My report</string>
+    <string name="registered_offences">Registered Offences</string>
+    <string name="un_registered_offences">Un Registered Offences</string>
+    <string name="experience">Experience</string>
+    <string name="mobile_verification">Mobile Verification</string>
+    <string name="captured_image_view">Captured image view</string>
+    <string name="flash_button">Flash button</string>
+    <string name="switch_camera_button">Switch camera button</string>
+    <string name="retry">RETRY</string>
+    <string name="camera_button">Camera button</string>
+    <string name="back">Back</string>
+    <string name="event_name">Event name</string>
+    <string name="personal_details">Personal details</string>
+    <string name="title">Title</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="father_name">Father Name</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="place_of_birth">Place of Birth</string>
+    <string name="citizenship">Citizenship</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="doa" translatable="false">DOA</string>
+    <string name="spouse_name">Spouse Name</string>
+    <string name="error_empty_field_found">Error empty field found</string>
+    <string name="not_valid">Not valid</string>
+    <string name="living_type">Living Type</string>
+    <string name="address_details">Address Details</string>
+    <string name="house_type">House Type</string>
+    <string name="name_of_home">Name of Home</string>
+    <string name="apartment_details">Apartment Details</string>
+    <string name="house_no">House No</string>
+    <string name="level_floor">Level Floor</string>
+    <string name="block_no">Block No</string>
+    <string name="apartment_name">Apartment Name</string>
+    <string name="raw_house_details">Raw House Details</string>
+    <string name="raw_house">Raw House</string>
+    <string name="property_name">Property Name</string>
+    <string name="door_no">Door No</string>
+    <string name="plot_no">Plot No</string>
+    <string name="street_name">Street Name</string>
+    <string name="colony_name">Colony Name</string>
+    <string name="landmark">Landmark</string>
+    <string name="area_locality">Area/Locality</string>
+    <string name="sub_district_talk">Sub District/Talk</string>
+    <string name="state">State</string>
+    <string name="property_type">Property Type</string>
+    <string name="select_location_on_map">Select location on Map</string>
+    <string name="is_permanent_adress">Is Permanent Adress</string>
+    <string name="default_communication_address">Default communication address</string>
+    <string name="current">Current</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="enter_spouse_name">Enter Spouse Name</string>
+    <string name="select_doa">Select DOA</string>
+    <string name="select_marital_status">Select marital status</string>
+    <string name="enter_place_of_birth">Enter Place of Birth</string>
+    <string name="select_date_of_birth">Select Date of birth</string>
+    <string name="select_gender">Select gender</string>
+    <string name="enter_mother_name">Enter Mother Name</string>
+    <string name="enter_father_name">Enter Father Name</string>
+    <string name="enter_surname">Enter Surname</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="select_title">Select title</string>
+    <string name="take_a_picture">Take a picture</string>
+    <string name="select_default_communication_address">Select default communication address</string>
+    <string name="select_district">Select district</string>
+    <string name="select_state">Select state</string>
+    <string name="enter_sub_district">Enter sub district</string>
+    <string name="enter_area_name">Enter area name</string>
+    <string name="enter_landmark">Enter landmark</string>
+    <string name="enter_colony_name">Enter colony name</string>
+    <string name="enter_street_no">Enter street no</string>
+    <string name="enter_plot_no">Enter plot no</string>
+    <string name="enter_door_no">Enter door no</string>
+    <string name="enter_raw_property_name">Enter raw property name</string>
+    <string name="enter_raw_hose">Enter raw hose</string>
+    <string name="enter_apartment_name">Enter apartment name</string>
+    <string name="enter_block_no">Enter block no</string>
+    <string name="select_floor">Select floor</string>
+    <string name="enter_apartment_house_no">Enter apartment house no</string>
+    <string name="enter_name_of_home">Enter name of home</string>
+    <string name="select_house_type">Select house type</string>
+    <string name="select_living_type">Select living type</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="personal_mobile_no">Personal Mobile No</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="verify">Verify</string>
+    <string name="residential_landline">Residential Landline</string>
+    <string name="personal_email_id">Personal Email Id</string>
+    <string name="preferred_language_of_communication">Preferred Language Of Communication</string>
+    <string name="preferred_mode_of_communication">Preferred Mode Of Communication</string>
+    <string name="sms" translatable="false">SMS</string>
+    <string name="call">Call</string>
+    <string name="select_preferred_communication_mode">Select preferred communication mode</string>
+    <string name="select_preferred_language">Select preferred language</string>
+    <string name="enter_email_id">Enter email id</string>
+    <string name="enter_residential_landline_number">Enter Residential landline number</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="identity_details">Identity Details</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="front_side">Front side</string>
+    <string name="back_side">Back side</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="voter_card">Voter Card</string>
+    <string name="enter_voter_id_no">Enter Voter Id No</string>
+    <string name="passport">Passport</string>
+    <string name="driving_license">Driving License</string>
+    <string name="enter_license_no">Enter License No</string>
+    <string name="ration_card">Ration Card</string>
+    <string name="enter_aadhar_no">Enter Aadhar No</string>
+    <string name="enter_pan_no">Enter Pan No</string>
+    <string name="enter_passport_no">Enter Passport No</string>
+    <string name="enter_ration_card_no">Enter Ration Card No</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="capture_aadhar_front">Capture Aadhar Front</string>
+    <string name="capture_aadhar_back">Capture Aadhar Back</string>
+    <string name="capture_pan_front">Capture PAN Front</string>
+    <string name="capture_pan_back">Capture PAN Back</string>
+    <string name="re_take">RE TAKE</string>
+    <string name="capture_driving_license_back">Capture Driving License Back</string>
+    <string name="capture_driving_license_front">Capture Driving License Front</string>
+    <string name="enter_driving_license_no">Enter Driving License No</string>
+    <string name="capture_passport_back">Capture Passport Back</string>
+    <string name="capture_passport_front">Capture Passport Front</string>
+    <string name="capture_voter_id_back">Capture Voter Id Back</string>
+    <string name="capture_voter_id_front">Capture Voter Id Front</string>
+    <string name="enter_voter_id">Enter Voter Id</string>
+    <string name="capture_ration_card_front">Capture Ration Card Front</string>
+    <string name="capture_ration_card_back">Capture Ration Card Back</string>
+    <string name="aadhaar_front">Aadhaar Front</string>
+    <string name="aadhaar_back">Aadhaar Back</string>
+    <string name="pan_front">PAN Front</string>
+    <string name="pan_back">PAN Back</string>
+    <string name="voter_id_front">Voter Id Front</string>
+    <string name="voter_id_back">Voter Id Back</string>
+    <string name="passport_front">Passport Front</string>
+    <string name="passport_back">Passport Back</string>
+    <string name="driving_license_front">Driving License Front</string>
+    <string name="driving_license_back">Driving License Back</string>
+    <string name="ration_card_front">Ration Card Front</string>
+    <string name="ration_card_back">Ration Card Back</string>
+    <string name="education_amp_occupation_details"><![CDATA[Education & Occupation Details]]></string>
+    <string name="education">Education</string>
+    <string name="education_proof">Education Proof</string>
+    <string name="upload_or_capture">Upload or Capture</string>
+    <string name="occupation">Occupation</string>
+    <string name="capture_education_proof">Capture Education Proof</string>
+    <string name="select_religion_practice">Select Religion Practice</string>
+    <string name="salaried_employed_with">Salaried Employed with</string>
+    <string name="please_specify">Please specify</string>
+    <string name="self_employed">Self Employed</string>
+    <string name="business">Business</string>
+    <string name="profession">Profession</string>
+    <string name="manufacture">Manufacture</string>
+    <string name="trade">Trade</string>
+    <string name="retail">Retail</string>
+    <string name="service">Service</string>
+    <string name="r_amp_d" translatable="false"><![CDATA[R&D]]></string>
+    <string name="recycling">Recycling</string>
+    <string name="others">Others</string>
+    <string name="type">Type</string>
+    <string name="description_of_business">Description of business</string>
+    <string name="type_of_profession">Type of Profession</string>
+    <string name="ca_cs" translatable="false">CA/CS</string>
+    <string name="doctor">Doctor</string>
+    <string name="advocate">Advocate</string>
+    <string name="architect">Architect</string>
+    <string name="plumber">Plumber</string>
+    <string name="electrician">Electrician</string>
+    <string name="carpenter">Carpenter</string>
+    <string name="tailor">Tailor</string>
+    <string name="other">Other</string>
+    <string name="description_of_profession">Description of profession</string>
+    <string name="gross_annual_income_range">Gross annual income range</string>
+    <string name="from" translatable="false">From</string>
+    <string name="to" translatable="false">To</string>
+    <string name="sources_of_income">Sources of income</string>
+    <string name="salary">Salary</string>
+    <string name="interest">Interest</string>
+    <string name="royalty">Royalty</string>
+    <string name="investments">Investments</string>
+    <string name="pension">Pension</string>
+    <string name="income_proof">Income proof</string>
+    <string name="type_income_proof">Type income proof</string>
+    <string name="supported_formats_pdf_jpg">Supported formats PDF, JPG</string>
+    <string name="upload_proof">Upload proof</string>
+    <string name="mobile_no_must_10_digits">Mobile no must 10 digits</string>
+    <string name="select_property">Select property</string>
+    <string name="enter_6_digits_of_otp">Enter 6 digits of OTP</string>
+    <string name="enter_10_digits_of_landline_no">Enter 10 digits of landline no</string>
+    <string name="enter_12_digits_aadhar_no">Enter 12 digits aadhar no</string>
+    <string name="enter_10_digits_pan_no">Enter 10 digits pan no</string>
+    <string name="enter_12_digits_voter_if_no">Enter 12 digits voter if no</string>
+    <string name="enter_8_digits_passport_no">Enter 8 digits passport no</string>
+    <string name="enter_16_digits_of_driving_license_no">Enter 16 digits of driving license no</string>
+    <string name="enter_pass_code">Enter Pass Code</string>
+    <string name="enter_4_digits_pass_code">Enter 4 Digits Pass Code</string>
+    <string name="enter_4_digits_aadhar_otp">Enter 4 digits aadhar OTP</string>
+    <string name="account_icon">Account Icon</string>
+    <string name="my_account">My Account</string>
+    <string name="general_settings">General settings</string>
+    <string name="click_to_logout_now">Click to logout now</string>
+    <string name="display_settings">Display Settings</string>
+    <string name="theme">Theme</string>
+    <string name="system_default">System default</string>
+    <string name="choose_theme">Choose theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="manage_your_account_bill_payments">Manage your account, Bill Payments</string>
+    <string name="display">Display</string>
+    <string name="theme_font_size">Theme, font size</string>
+    <string name="app_language">App language</string>
+    <string name="english_device_default_language">English ( device default language )</string>
+    <string name="why_is_it_important"><u>Why is it important?</u></string>
+
+    <array name="property_type">
+        <item>Select</item>
+        <item>Owned</item>
+        <item>Rented</item>
+        <item>Leased</item>
+        <item>Ancestral</item>
+        <item>Company Provided</item>
+    </array>
+
+    <array name="rl_pract_array">
+        <item>Select</item>
+        <item>Hinduism</item>
+        <item>Islam</item>
+        <item>Christianity</item>
+        <item>Buddhism</item>
+        <item>Jainism</item>
+        <item>Sikhism</item>
+        <item>Atheism (No Religion)</item>
+        <item>Other</item>
+    </array>
 
 
-    <string name="sign_up_employment_status">Select your Employment Status</string>
+    <array name="income_proof_array">
+        <item>Select</item>
+        <item>Salary Slip</item>
+        <item>ITR Form</item>
+        <item>ITR Acknowledgement</item>
+        <item>Bank Statement</item>
+        <item>Income Certificate</item>
+        <item>PF Statement</item>
+        <item>Other</item>
+    </array>
+
+    <array name="income_from_array">
+        <item>Select</item>
+        <item>1 lacs</item>
+        <item>2 lacs</item>
+        <item>3 lacs</item>
+        <item>4 lacs</item>
+        <item>5 lacs</item>
+        <item>6 lacs</item>
+        <item>7 lacs</item>
+        <item>8 lacs</item>
+        <item>9 lacs</item>
+        <item>10 lacs</item>
+    </array>
+
+    <array name="income_to_array">
+        <item>Select</item>
+        <item>1 lacs</item>
+        <item>2 lacs</item>
+        <item>3 lacs</item>
+        <item>4 lacs</item>
+        <item>5 lacs</item>
+        <item>6 lacs</item>
+        <item>7 lacs</item>
+        <item>8 lacs</item>
+        <item>9 lacs</item>
+        <item>10 lacs</item>
+        <item>11 lacs</item>
+        <item>12 lacs</item>
+        <item>13 lacs</item>
+        <item>14 lacs</item>
+        <item>15 lacs</item>
+    </array>
+
+
+    <array name="employed_with">
+        <item>Select</item>
+        <item>Proprietorship</item>
+        <item>HUF</item>
+        <item>Partnership</item>
+        <item>LLP</item>
+        <item>OPC</item>
+        <item>Pvt Ltd</item>
+        <item>Public Ltd</item>
+        <item>Government</item>
+        <item>Others</item>
+    </array>
+
+
+    <array name="occupation_array">
+        <item>Select</item>
+        <item>Salaried</item>
+        <item>Self Employed</item>
+        <item>Home Maker</item>
+        <item>Retired</item>
+        <item>Student</item>
+        <item>Others</item>
+    </array>
+
+    <array name="education_array">
+        <item>Select</item>
+        <item>Lower Primary ( Upto 5th )</item>
+        <item>Higher Primary ( Upto 8th )</item>
+        <item>Lower Secondary ( Upto 10th )</item>
+        <item>Higher Secondary ( Upto 12th )</item>
+        <item>Diploma</item>
+        <item>UG - undergraduate</item>
+        <item>PG - Postgraduate</item>
+        <item>Doctorate</item>
+    </array>
+
+    <array name="floor_array">
+        <item>Select</item>
+        <item>Floor 1</item>
+        <item>Floor2</item>
+        <item>Floor 3</item>
+    </array>
+
+    <array name="language_array">
+        <item>Select</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Tamil</item>
+    </array>
+
+    <array name="living_type_array">
+        <item>Select</item>
+        <item>Single</item>
+        <item>Family</item>
+        <item>Hostel</item>
+    </array>
+
+    <array name="house_type_array">
+        <item>Select</item>
+        <item>Individual</item>
+        <item>Row</item>
+        <item>Apartment</item>
+    </array>
+
+    <array name="property_type_array">
+        <item>Select</item>
+        <item>Owned</item>
+        <item>Rented</item>
+        <item>Leased</item>
+        <item>Ancestral</item>
+        <item>Company Provided</item>
+    </array>
+
+
+    <array name="title_array">
+        <item>Select</item>
+        <item>Mr</item>
+        <item>Mrs</item>
+    </array>
+
+
+    <array name="marital_status">
+        <item>Select</item>
+        <item>Married</item>
+        <item>Unmarried</item>
+        <item>Divorced</item>
+    </array>
+
+    <array name="gender">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+        <item>Other</item>
+    </array>
+
+    <string-array name="countries_array">
+        <item>India</item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Bouvet Island</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (Keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Cote d\'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Eswatini</item>
+        <item>Ethiopia</item>
+        <item>Faeroe Islands</item>
+        <item>Falkland Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>Former Yugoslav Republic of Macedonia</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard Island and McDonald Islands</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>North Korea</item>
+        <item>Northern Marianas</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn Islands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Sqo Tome and Principe</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>The Bahamas</item>
+        <item>The Gambia</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States of America</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string name="Rs" translatable="false">\u20B9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

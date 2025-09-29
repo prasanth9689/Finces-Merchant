@@ -26,11 +26,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FincesMerchant">
         <activity
-            android:name=".ui.Home"
+            android:name=".ui.add_contact.AddContactMain"
             android:exported="false" />
-        <!-- <activity -->
+        <activity
+         android:name=".ui.Home"
+         android:exported="false" />
         <!-- android:name=".ui.RegistrationActivity" -->
-        <!-- android:exported="false" /> -->
         <activity
             android:name=".ui.RegistrationActivity"
             android:exported="true">

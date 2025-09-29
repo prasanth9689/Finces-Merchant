@@ -10,6 +10,8 @@
     <color name="selected_background_color">#dddddd</color>
     <color name="light_grey">#F9F9FA</color>
     <color name="shadow_2">#dddddd</color>
+    <color name="shadow_1">#d4d4d4</color>
+    <color name="grey">#848282</color>
 
     <!--    For Normal/Light Mode-->
     <color name="backgroundColor">#FFFFFF</color>

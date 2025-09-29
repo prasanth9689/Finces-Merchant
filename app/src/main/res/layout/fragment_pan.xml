@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="20dp"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -7,12 +9,35 @@
     android:fitsSystemWindows="true"
     android:background="@color/white">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_pan"/>
+        android:layout_above="@id/pan_con"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center_horizontal"
+            android:text="Company verification"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="30sp"
+            tools:ignore="RtlHardcoded" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pan"/>
+
+    </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/pan_con"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
@@ -24,6 +49,38 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Company type"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#F2FCFD"
+
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <RadioButton
+                android:id="@+id/eng_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Propriotership"
+                android:textColor="@color/textColor"
+                android:textSize="17sp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:text="Please enter your PAN number to verify."/>
 

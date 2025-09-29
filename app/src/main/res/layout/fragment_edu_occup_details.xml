@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.add_contact.EduOccupDetailsFragment">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="20dp"
+        android:background="@color/backgroundColor">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/education_amp_occupation_details"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/education"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/txt_citizen_not_valid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/not_valid"
+                    android:textColor="#ff0130"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_common"
+                android:layout_marginTop="5dp">
+
+                <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
+                    android:id="@+id/spinner_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="@string/education_proof"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/upload_or_capture"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_education_proof"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_edu_proof"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_education_proof"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_education_proof"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/occupation"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/txt_Occupation_not_valid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/not_valid"
+                    android:textColor="#ff0130"
+                    android:visibility="gone"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_btn_common"
+                android:layout_marginTop="5dp">
+
+                <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
+                    android:id="@+id/spinner_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ed_other_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_btn_common"
+                android:textCursorDrawable="@drawable/cursor_black"
+                android:fontFamily="sans-serif"
+                android:paddingStart="10dp"
+                android:hint="Type Occupation"
+                android:paddingEnd="10dp"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"
+                android:inputType="text"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/salaried_employed_with_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/salaried_employed_with_spinner_selection_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/salaried_employed_with"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/txt_employed_with_not_valid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/not_valid"
+                                android:textColor="#ff0130"
+                                android:visibility="gone"
+                                tools:ignore="SmallSp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:layout_marginTop="5dp">
+
+                            <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
+                                android:id="@+id/salaried_employed_with_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/salaried_employed_with_other_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/please_specify"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+                        <EditText
+                            android:id="@+id/salaried_employed_with_other_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="Type"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/salaried_employed_with_company_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/company"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/salaried_employed_with_company_ed"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="Type"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/self_employed_selection_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/self_employed"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_self_emp_business"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:buttonTint="@color/black"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/business" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_self_emp_professional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/profession" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/self_employed_business_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/business"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_manufacture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:buttonTint="@color/black"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/manufacture" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_trade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/trade" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_retail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:buttonTint="@color/black"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/retail" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_service"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/service" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/r_amp_d" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/checkbox_recycling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:buttonTint="@color/black"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/recycling" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_others_business"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/others" />
+
+                    <LinearLayout
+                        android:id="@+id/self_emp_business_other_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/please_specify"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/ed_emp_with_other_specify_business"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="@string/type"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/self_emp_business_description_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/description_of_business"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+                        <EditText
+                            android:id="@+id/ed_description_business"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="@string/type"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/self_employed_profession_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/type_of_profession"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_ca_cs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:buttonTint="@color/black"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/ca_cs" />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_doctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/doctor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_lawyer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/advocate" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_architect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/architect" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_plumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/plumber" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_electrician"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/electrician" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_carpenter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/carpenter" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_tailor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/tailor" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_others_profession"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/other" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/self_emp_profession_other_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/please_specify"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/ed_emp_with_other_specify_profession"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="@string/type"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/self_emp_profession_description_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/description_of_profession"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/ed_description_services"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="@string/type"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/gross_annual_income_range"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/from"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txt_an_income_frm_not_valid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:layout_marginTop="5dp">
+
+                        <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
+                            android:id="@+id/spinner_an_income_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/to"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txt_an_income_to_not_valid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:layout_marginTop="5dp">
+
+                        <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
+                            android:id="@+id/spinner_an_income_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/sources_of_income"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_src_income_business"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/business" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_src_income_salary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/salary" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_src_income_interest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/interest" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_src_income_royality"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/royalty" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_src_income_investments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/investments" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_src_income_pension"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/pension" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_src_income_others"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/other" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/income_proof_selection_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/income_proof"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/txt_income_proof_not_valid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/not_valid"
+                                android:textColor="#ff0130"
+                                android:visibility="gone"
+                                tools:ignore="SmallSp" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:layout_marginTop="5dp">
+
+                            <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
+                                android:id="@+id/spinner_income_proof"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/income_src_other_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/please_specify"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+                        <EditText
+                            android:id="@+id/ed_income_proof_other_specify"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="@string/type"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/income_src_other_container2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="@string/please_specify"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black" />
+                        <EditText
+                            android:id="@+id/ed_income_proof_other_specify2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_btn_common"
+                            android:textCursorDrawable="@drawable/cursor_black"
+                            android:fontFamily="sans-serif"
+                            android:paddingStart="10dp"
+                            android:hint="@string/type_income_proof"
+                            android:paddingEnd="10dp"
+                            android:importantForAutofill="no"
+                            tools:ignore="LabelFor"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/supported_formats_pdf_jpg"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_proof"
+                    android:paddingStart="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_upload"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_blue_radius"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="UnusedAttribute" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

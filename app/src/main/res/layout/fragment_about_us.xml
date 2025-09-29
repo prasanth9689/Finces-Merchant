@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="20dp"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginStart="10dp"
+                android:foreground="?android:attr/selectableItemBackground" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="About us"
+            android:layout_toEndOf="@id/back"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:verticalScrollbarPosition="defaultPosition">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/this_app_is_a_simple_yet_powerful_tool_for_individual_entrepreneurs_or_sole_proprietors_or_sole_traders_who_are_willing_or_already_pursuing_their_business_as_an_individual_in_the_bfsi_industry_to_accelerate_automate_and_manage_their_business_more_efficiently_and_effectively"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/here_we_guide_you_from_set_up_to_taxation_helping_you_with_the_various_rules_and_regulations_applicable_to_your_business_necessary_registrations_and_licenses_to_be_obtained_managing_and_automating_your_entire_business_processes_like_invoicing_banking_collection_reporting_inventory_management_accounting_and_taxation_along_with_customer_relationship_management_thus_transforming_your_active_income_to_passive_income"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/we_also_strive_to_provide_a_platform_for_the_various_business_communities_to_engage_with_each_other_in_a_better_and_constructive_way"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/our_mission"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/to_unleash_the_power_of_technology_into_the_hands_of_entrepreneurs"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/engineering_or_technology_is_all_about_using_the_power_of_science_to_make_life_better_for_people_to_reduce_cost_to_improve_comfort_to_improve_productivity_etc"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_r_narayana_murthy"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/wishing_you_a_happy_ride_with_us_we_look_forward_to_a_constructive_and_mutually_beneficial_relationship"
+                android:fontFamily="sans-serif"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

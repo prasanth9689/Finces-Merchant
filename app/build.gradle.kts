@@ -82,6 +82,11 @@ dependencies {
     kapt("androidx.room:room-compiler:2.7.1")
     implementation("androidx.room:room-ktx:2.7.1")
 
+    implementation(files("libs/mpinkeyboard-release.aar"))
+
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
+
     // optional but recommended for ViewModel
 //    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.2.0")
 //    kapt("androidx.hilt:hilt-compiler:1.2.0")

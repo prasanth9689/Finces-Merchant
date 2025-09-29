@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    android:layout_marginStart="15dp"
-    android:layout_marginEnd="15dp"
-    android:layout_marginTop="10dp"
     tools:context=".ui.EmployeeRegFragment"
     android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <TextView
@@ -30,14 +30,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="#F2FCFD"
-            app:cardBackgroundColor="#F2FCFD"
-            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
             app:cardElevation="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_common"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -143,14 +144,12 @@
             android:textSize="17sp"
             android:textStyle="bold"/>
 
-        <androidx.cardview.widget.CardView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="#F2FCFD"
-            app:cardBackgroundColor="#F2FCFD"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="0dp">
+            android:layout_margin="10dp"
+            >
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -161,43 +160,49 @@
                 android:text="Admin"
                 android:textColor="@color/textColor"
                 android:textSize="17sp" />
-        </androidx.cardview.widget.CardView>
+        </RelativeLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/tamil"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="#F2FCFD"
-            app:cardBackgroundColor="#F2FCFD"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="0dp">
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Set passcode"
+            android:textColor="@color/textColor"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
 
-            <RadioButton
-                android:id="@+id/tamil_radio_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Staff"
-                android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:textSize="17sp"
-                android:textColor="@color/textColor"/>
-        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btnSendPhone"
+            android:text="Set passcode"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
-
-
-
-    <Button
+    <RelativeLayout
         android:id="@+id/btnPan"
-        android:text="Set passcode"
         android:layout_marginTop="10dp"
         android:layout_gravity="end"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@drawable/btn_disabled"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

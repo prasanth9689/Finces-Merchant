@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.add_contact.IdentityDetailsFragment">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="20dp"
+        android:background="@color/backgroundColor">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:tint="@color/textColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/identity_details"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="@string/aadhar"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/ed_aadhar_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/enter_aadhar_no"
+                        android:maxLength="16"
+                        android:paddingStart="10dp"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:paddingEnd="10dp"
+                        tools:ignore="LabelFor" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/front_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_aadhar_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_aadhar_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_aadhar_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_aadhar_cap_fr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/back_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_aadhar_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_aadhar_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_aadhar_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_aadhar_cap_bk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="@string/pan_card"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/ed_pan_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:maxLength="10"
+                        android:fontFamily="sans-serif"
+                        android:paddingStart="10dp"
+                        android:hint="@string/enter_pan_no"
+                        android:paddingEnd="10dp"
+                        android:importantForAutofill="no"
+                        tools:ignore="LabelFor"
+                        android:inputType="textPhonetic" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/front_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_pan_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_pan_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_pan_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_pan_cap_fr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/back_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_pan_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_pan_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_pan_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_pan_cap_bk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="@string/voter_card"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/ed_voter_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:fontFamily="sans-serif"
+                        android:paddingStart="10dp"
+                        android:maxLength="12"
+                        android:hint="@string/enter_voter_id_no"
+                        android:paddingEnd="10dp"
+                        android:importantForAutofill="no"
+                        tools:ignore="LabelFor"
+                        android:inputType="text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/front_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_voter_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:cardBackgroundColor="@color/white"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="8dp"
+                            android:visibility="visible">
+
+                            <Button
+                                android:id="@+id/re_take_voter_front"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:text="@string/re_take"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/edit_text_login"
+                                android:visibility="gone"/>
+
+                            <ImageView
+                                android:id="@+id/image_voter_front"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/splash_gradient" />
+
+                            <TextView
+                                android:id="@+id/txt_voter_cap_fr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:text="@string/capture_image"
+                                android:textColor="@color/white"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/back_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_voter_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_voter_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_voter_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_voter_cap_bk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="@string/passport"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/ed_passport"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:fontFamily="sans-serif"
+                        android:paddingStart="10dp"
+                        android:maxLength="8"
+                        android:hint="@string/enter_passport_no"
+                        android:paddingEnd="10dp"
+                        android:importantForAutofill="no"
+                        tools:ignore="LabelFor"
+                        android:inputType="text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/front_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_passport_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_passport_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_passport_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_passport_cap_fr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/back_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_passport_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_passport_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_passport_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_passport_cap_bk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="@string/driving_license"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/ed_driving_license"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:fontFamily="sans-serif"
+                        android:paddingStart="10dp"
+                        android:maxLength="16"
+                        android:hint="@string/enter_license_no"
+                        android:paddingEnd="10dp"
+                        android:importantForAutofill="no"
+                        tools:ignore="LabelFor"
+                        android:inputType="text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/front_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_driving_license_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_driving_license_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_driving_license_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_driving_license_cap_fr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/back_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_driving_license_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_driving_license_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_driving_license_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_driving_license_cap_bk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_radius_con"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="20dp"
+                        android:text="@string/ration_card"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/ed_ration_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_btn_common"
+                        android:textCursorDrawable="@drawable/cursor_black"
+                        android:fontFamily="sans-serif"
+                        android:paddingStart="10dp"
+                        android:hint="@string/enter_ration_card_no"
+                        android:paddingEnd="10dp"
+                        android:importantForAutofill="no"
+                        tools:ignore="LabelFor"
+                        android:inputType="text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/front_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/apple_camera" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_rd_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_rd_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_rd_front"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_rd_cap_fr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="More Fonts..."
+                            android:text="@string/not_valid"
+                            android:textColor="#ff0130"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            tools:ignore="SmallSp" />
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="@string/back_side"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/textColor" />
+
+                            <ImageView
+
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/apple_camera"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_rd_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        app:cardCornerRadius="8dp"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/re_take_rd_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="@string/re_take"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_text_login"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/image_rd_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/splash_gradient" />
+
+                        <TextView
+                            android:id="@+id/txt_rd_cap_bk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="@string/capture_image"
+                            android:textColor="@color/white"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_blue_radius"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
