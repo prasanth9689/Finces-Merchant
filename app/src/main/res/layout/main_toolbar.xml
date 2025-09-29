@@ -42,7 +42,7 @@
                 android:cursorVisible="false"
                 android:focusable="false"
                 android:fontFamily="sans-serif"
-                android:text="Credse"
+                android:text="Finces"
                 android:textColor="@color/textColor"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -225,7 +225,7 @@
                     android:paddingTop="5dp"
                     android:paddingEnd="10dp"
                     android:paddingBottom="5dp"
-                    android:text="Pay Bills"
+                    android:text="@string/pay_bills"
                     android:textColor="@color/white" />
 
             </RelativeLayout>

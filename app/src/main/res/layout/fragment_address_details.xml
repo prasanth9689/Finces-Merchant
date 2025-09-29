@@ -84,7 +84,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:layout_marginTop="5dp">
 
                 <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
@@ -122,7 +122,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:layout_marginTop="5dp">
 
                 <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
@@ -149,7 +149,7 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:textCursorDrawable="@drawable/cursor_black"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
                 tools:ignore="LabelFor"
@@ -189,7 +189,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/bg_btn_common"
+                        android:background="@drawable/btn_common"
                         android:fontFamily="sans-serif"
                         android:textCursorDrawable="@drawable/cursor_black"
                         android:paddingStart="10dp"
@@ -225,7 +225,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:background="@drawable/bg_btn_common"
+                        android:background="@drawable/btn_common"
                         android:layout_marginTop="5dp">
 
                         <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner
@@ -249,7 +249,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/bg_btn_common"
+                        android:background="@drawable/btn_common"
                         android:textCursorDrawable="@drawable/cursor_black"
                         android:fontFamily="sans-serif"
                         android:paddingStart="10dp"
@@ -271,7 +271,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/bg_btn_common"
+                        android:background="@drawable/btn_common"
                         android:fontFamily="sans-serif"
                         android:textCursorDrawable="@drawable/cursor_black"
                         android:paddingStart="10dp"
@@ -319,7 +319,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/bg_btn_common"
+                        android:background="@drawable/btn_common"
                         android:fontFamily="sans-serif"
                         android:textCursorDrawable="@drawable/cursor_black"
                         android:paddingStart="10dp"
@@ -341,7 +341,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="5dp"
-                        android:background="@drawable/bg_btn_common"
+                        android:background="@drawable/btn_common"
                         android:fontFamily="sans-serif"
                         android:textCursorDrawable="@drawable/cursor_black"
                         android:paddingStart="10dp"
@@ -373,7 +373,7 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:textCursorDrawable="@drawable/cursor_black"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
                 tools:ignore="LabelFor"
@@ -395,7 +395,7 @@
                 android:paddingStart="10dp"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
                 tools:ignore="LabelFor"
@@ -417,7 +417,7 @@
                 android:paddingStart="10dp"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
                 tools:ignore="LabelFor"
@@ -438,7 +438,7 @@
                 android:layout_marginTop="5dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
@@ -460,7 +460,7 @@
                 android:layout_marginTop="5dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
@@ -482,7 +482,7 @@
                 android:layout_marginTop="5dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
@@ -505,7 +505,7 @@
                 android:layout_marginTop="5dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
@@ -545,7 +545,7 @@
                 android:layout_marginTop="5dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
@@ -585,7 +585,7 @@
                 android:layout_marginTop="5dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:textCursorDrawable="@drawable/cursor_black"
                 android:fontFamily="sans-serif"
                 android:importantForAutofill="no"
@@ -620,7 +620,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/bg_btn_common"
+                android:background="@drawable/btn_common"
                 android:layout_marginTop="5dp">
 
                 <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner

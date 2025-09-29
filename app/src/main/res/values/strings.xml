@@ -95,9 +95,9 @@
     <string name="profile">Profile</string>
     <string name="my_company">My company</string>
     <string name="wallet_satements">Wallet satements</string>
-    <string name="name">Name</string>
+    <string name="name">Name:</string>
     <string name="address">Address</string>
-    <string name="dob">DOB</string>
+    <string name="dob">DOB:</string>
     <string name="gender">Gender</string>
     <string name="mobile">Mobile</string>
     <string name="email">Email</string>
@@ -819,5 +819,33 @@
     </string-array>
     <string name="Rs" translatable="false">\u20B9</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="company_name">Company Name:</string>
+    <string name="status">Status:</string>
+    <string name="company_id">Company ID:</string>
+    <string name="device_binding">Device binding</string>
+    <string name="admin">Admin</string>
+    <string name="bind_device_to_employee">Bind device to employee</string>
+    <string name="employee_registration">Employee registration</string>
+    <string name="pan_no">Pan no:</string>
+    <string name="employee_type">Employee type</string>
+    <string name="set_passcode">Set passcode</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_password">Enter password</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="otp" translatable="false">OTP</string>
+    <string name="pay_bills">Pay Bills</string>
+    <string name="about_us">About Us</string>
+    <string name="terminals_devices">Terminals (Devices)</string>
+    <string name="products_business_area">Products (Business Area)</string>
+    <string name="please_enter_your_phone_number_to_verify_a_6_digit_otp_will_be_sent_to_you">Please enter your phone number to verify. A 6-digit OTP will be sent to you.</string>
+    <string name="company_verification">Company verification</string>
+    <string name="company_type">Company type</string>
+    <string name="propriotership">Propriotership</string>
+    <string name="please_enter_your_pan_number_to_verify">Please enter your PAN number to verify.</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="verify_pan">Verify Pan</string>
+    <string name="set_passcode_caps">SET PASSCODE</string>
+    <string name="set_4_digits_of_passcode">Set 4 digits of passcode</string>
+    <string name="the_6_digit_otp_will_be_fetched_automatically_manual_entry_is_not_required">The 6-digit OTP will be fetched automatically; manual entry is not required.</string>
 </resources>

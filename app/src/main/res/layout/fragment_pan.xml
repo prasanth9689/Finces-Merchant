@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/textColor"
             android:layout_gravity="center_horizontal"
-            android:text="Company verification"
+            android:text="@string/company_verification"
             android:textStyle="bold"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
@@ -50,7 +50,7 @@
             android:fontFamily="sans-serif"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:text="Company type"/>
+            android:text="@string/company_type"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/english"
@@ -69,7 +69,7 @@
                 android:fontFamily="sans-serif-condensed-medium"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:text="Propriotership"
+                android:text="@string/propriotership"
                 android:textColor="@color/textColor"
                 android:textSize="17sp" />
         </androidx.cardview.widget.CardView>
@@ -82,11 +82,11 @@
             android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:text="Please enter your PAN number to verify."/>
+            android:text="@string/please_enter_your_pan_number_to_verify"/>
 
         <EditText
             android:id="@+id/edPan"
-            android:hint="PAN Number"
+            android:hint="@string/pan_number"
             android:inputType="text"
             android:layout_marginTop="10dp"
             android:maxLength="10"
@@ -109,7 +109,7 @@
 
         <Button
             android:id="@+id/btnPan"
-            android:text="Verify Pan"
+            android:text="@string/verify_pan"
             android:layout_marginTop="10dp"
             android:layout_gravity="end"
             android:layout_width="wrap_content"

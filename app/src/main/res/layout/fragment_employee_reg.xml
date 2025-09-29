@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Employee registration"
+            android:text="@string/employee_registration"
             android:textSize="30sp"
             android:textStyle="bold"
             android:fontFamily="sans-serif-medium"
@@ -52,7 +52,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="Name:"
+                        android:text="@string/name"
                         android:textColor="@color/textColor"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -81,7 +81,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="Pan no:"
+                        android:text="@string/pan_no"
                         android:textColor="@color/textColor"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -110,7 +110,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="DOB:"
+                        android:text="@string/dob"
                         android:textColor="@color/textColor"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -139,7 +139,7 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:layout_marginTop="10dp"
-            android:text="Employee type"
+            android:text="@string/employee_type"
             android:textColor="@color/textColor"
             android:textSize="17sp"
             android:textStyle="bold"/>
@@ -157,7 +157,7 @@
                 android:fontFamily="sans-serif-condensed-medium"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:text="Admin"
+                android:text="@string/admin"
                 android:textColor="@color/textColor"
                 android:textSize="17sp" />
         </RelativeLayout>
@@ -169,14 +169,14 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:layout_marginTop="10dp"
-            android:text="Set passcode"
+            android:text="@string/set_passcode"
             android:textColor="@color/textColor"
             android:textSize="17sp"
             android:textStyle="bold"/>
 
         <Button
             android:id="@+id/btnSendPhone"
-            android:text="Set passcode"
+            android:text="@string/set_passcode"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -199,7 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Submit"
+            android:text="@string/submit"
             android:textSize="16sp"
             android:textStyle="bold"/>
 

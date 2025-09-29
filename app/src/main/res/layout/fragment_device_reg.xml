@@ -53,7 +53,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="Company Name:"
+                        android:text="@string/company_name"
                         android:textColor="@color/textColor"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -82,7 +82,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="Status:"
+                        android:text="@string/status"
                         android:textColor="@color/textColor"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -111,7 +111,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="Company ID:"
+                        android:text="@string/company_id"
                         android:textColor="@color/textColor"
                         android:textSize="17sp"
                         android:textStyle="bold"/>
@@ -140,7 +140,7 @@
           android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:text="Device binding"
+            android:text="@string/device_binding"
             android:textColor="@color/textColor"
             android:textSize="17sp"
             android:textStyle="bold"/>
@@ -159,7 +159,7 @@
                 android:fontFamily="sans-serif-condensed-medium"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
-                android:text="Admin"
+                android:text="@string/admin"
                 android:textColor="@color/textColor"
                 android:textSize="17sp" />
         </androidx.cardview.widget.CardView>
@@ -177,7 +177,7 @@
                 android:id="@+id/tamil_radio_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bind device to employee"
+                android:text="@string/bind_device_to_employee"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:fontFamily="sans-serif-condensed-medium"
@@ -192,7 +192,7 @@
 
     <Button
         android:id="@+id/btnPan"
-        android:text="Save"
+        android:text="@string/save"
         android:layout_marginTop="10dp"
         android:layout_gravity="end"
         android:layout_width="match_parent"

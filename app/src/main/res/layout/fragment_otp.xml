@@ -24,12 +24,12 @@
             android:fontFamily="sans-serif"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:text="The 6-digit OTP will be fetched automatically; manual entry is not required."/>
+            android:text="@string/the_6_digit_otp_will_be_fetched_automatically_manual_entry_is_not_required"/>
 
 
         <EditText
             android:id="@+id/etOtp"
-            android:hint="OTP"
+            android:hint="@string/otp"
             android:inputType="number"
             android:layout_marginTop="10dp"
             android:maxLength="6"
@@ -40,7 +40,7 @@
 
         <Button
             android:id="@+id/btnVerifyOtp"
-            android:text="Verify OTP"
+            android:text="@string/verify_otp"
             android:layout_marginTop="10dp"
             android:layout_gravity="end"
             android:layout_width="wrap_content"

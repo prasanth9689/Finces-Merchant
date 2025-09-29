@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/bg_btn_common"
+                    android:background="@drawable/btn_common"
                     android:textCursorDrawable="@drawable/cursor_black"
                     android:fontFamily="sans-serif"
                     android:paddingStart="10dp"
@@ -96,7 +96,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/bg_btn_common"
+                    android:background="@drawable/btn_common"
                     android:textCursorDrawable="@drawable/cursor_black"
                     android:hint="@string/enter_otp"
                     android:fontFamily="sans-serif"
@@ -135,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/bg_btn_common"
+                    android:background="@drawable/btn_common"
                     android:textCursorDrawable="@drawable/cursor_black"
                     android:fontFamily="sans-serif"
                     android:paddingStart="10dp"
@@ -157,7 +157,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/bg_btn_common"
+                    android:background="@drawable/btn_common"
                     android:textCursorDrawable="@drawable/cursor_black"
                     android:fontFamily="sans-serif"
                     android:paddingStart="10dp"
@@ -194,7 +194,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="@drawable/bg_btn_common"
+                    android:background="@drawable/btn_common"
                     android:layout_marginTop="5dp">
 
                     <in.sethiya.bizzbots.bfsi.finces.merchant.util.CustomSpinner

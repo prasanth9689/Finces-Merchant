@@ -56,42 +56,14 @@ class IntroductionFragment : Fragment(R.layout.fragment_introduction) {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        loadPrivacyPolicy()
+
         binding.continueWelcomeButton.setOnClickListener {
             binding.privacyPolicyLayout.visibility = View.VISIBLE
             binding.welComeScreenLayout.visibility = View.GONE
 
-            binding.webView.settings.javaScriptEnabled = true
 
-            binding.webView.webViewClient = object : WebViewClient() {
-                @Deprecated("Deprecated in Java")
-                override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-                    view.loadUrl(url)
-                    return true
-                }
-            }
-
-            binding.webView.webViewClient = object : WebViewClient() {
-                @Deprecated("Deprecated in Java")
-                override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-                    view.loadUrl(url)
-                    return true
-                }
-
-                override fun onPageFinished(view: WebView, url: String) {
-                    super.onPageFinished(view, url)
-                    binding.privacyPolicyProgressBar.visibility = View.GONE
-                    binding.webView.visibility = View.VISIBLE
-                    binding.agreePrivacyPolicyButton.visibility = View.VISIBLE
-                }
-            }
-
-            binding.agreePrivacyPolicyButton.setOnClickListener {
-                binding.privacyPolicyLayout.visibility = View.GONE
-                binding.appPermissionsLayout.visibility = View.VISIBLE
-            }
-
-
-            binding.webView.loadUrl("https://contacts.skyblue.co.in/pages/privacy_policy.html")
         }
 
         binding.appPermissionButton.setOnClickListener {
@@ -102,6 +74,41 @@ class IntroductionFragment : Fragment(R.layout.fragment_introduction) {
         binding.appPermissionButton.setOnClickListener {
             checkAndRequestPermissions()
         }
+    }
+
+    private fun loadPrivacyPolicy() {
+        binding.webView.settings.javaScriptEnabled = true
+
+        binding.webView.webViewClient = object : WebViewClient() {
+            @Deprecated("Deprecated in Java")
+            override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+                view.loadUrl(url)
+                return true
+            }
+        }
+
+        binding.webView.webViewClient = object : WebViewClient() {
+            @Deprecated("Deprecated in Java")
+            override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+                view.loadUrl(url)
+                return true
+            }
+
+            override fun onPageFinished(view: WebView, url: String) {
+                super.onPageFinished(view, url)
+                binding.privacyPolicyProgressBar.visibility = View.GONE
+                binding.webView.visibility = View.VISIBLE
+                binding.agreePrivacyPolicyButton.visibility = View.VISIBLE
+            }
+        }
+
+        binding.agreePrivacyPolicyButton.setOnClickListener {
+            binding.privacyPolicyLayout.visibility = View.GONE
+            binding.appPermissionsLayout.visibility = View.VISIBLE
+        }
+
+
+        binding.webView.loadUrl("https://finces.in/pages/privacy_policy.html")
     }
 
     override fun onDestroyView() {

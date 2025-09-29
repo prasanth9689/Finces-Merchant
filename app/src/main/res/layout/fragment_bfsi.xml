@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:fontFamily="sans-serif-medium"
-            android:text="BFSI"
+            android:text="@string/bfsi"
             android:layout_toEndOf="@id/back"
             android:layout_centerVertical="true"
             android:textColor="@color/black"

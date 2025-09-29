@@ -25,11 +25,11 @@
             android:fontFamily="sans-serif"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:text="Please enter your phone number to verify. A 6-digit OTP will be sent to you."/>
+            android:text="@string/please_enter_your_phone_number_to_verify_a_6_digit_otp_will_be_sent_to_you"/>
 
         <EditText
             android:id="@+id/etPhone"
-            android:hint="Phone Number"
+            android:hint="@string/phone_number"
             android:inputType="phone"
             android:layout_marginTop="10dp"
             android:maxLength="10"
@@ -40,7 +40,7 @@
 
         <Button
             android:id="@+id/btnSendPhone"
-            android:text="Send OTP"
+            android:text="@string/send_otp"
             android:layout_marginTop="10dp"
             android:layout_gravity="end"
             android:layout_width="wrap_content"

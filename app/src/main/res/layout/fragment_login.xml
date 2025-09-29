@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_centerInParent="true"
@@ -31,11 +31,11 @@
             android:fontFamily="sans-serif"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:text="Enter mobile no"/>
+            android:text="@string/enter_mobile_no"/>
 
         <EditText
             android:id="@+id/edPan"
-            android:hint="Mobile Number"
+            android:hint="@string/mobile_number"
             android:inputType="text"
             android:layout_marginTop="10dp"
             android:maxLength="10"
@@ -51,7 +51,7 @@
             android:textSize="15sp"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
-            android:text="Enter password"/>
+            android:text="@string/enter_password"/>
 
         <EditText
             android:hint="Password"
@@ -76,7 +76,7 @@
 
         <Button
             android:id="@+id/btnLogin"
-            android:text="Login"
+            android:text="@string/login"
             android:layout_marginTop="10dp"
             android:layout_gravity="end"
             android:layout_width="match_parent"
